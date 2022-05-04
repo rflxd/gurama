@@ -63,6 +63,7 @@ document.querySelectorAll('button').forEach((btn) => {
 const animate = () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
   requestAnimationFrame(animate);
+  console.log('wtf')
   camera.position.x = Math.cos(Date.now() * 0.0005) * 10;
   camera.position.z = Math.sin(Date.now() * 0.0005) * 10;
   camera.lookAt(scene.position);
