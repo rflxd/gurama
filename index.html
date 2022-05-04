@@ -8,9 +8,63 @@
     <title>Gurama</title>
 </head>
 <body>
+    <main>
+        <button id="btn">BRUh</button>
+        <button id="btn">BRUh</button>
+        <button id="btn">BRUh</button>
+        <button id="btn">BRUh</button>
+        <button id="btn">BRUh</button>
+        <button id="btn">BRUh</button>
+    </main>
     <canvas id='bg'></canvas>
     <script type="module" src="./main.js"></script>
     <style>
+        html {
+            font-family: sans-serif;
+        }
+        main {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 7%;
+            z-index: 1;
+            bottom: 5%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 5rem;
+            justify-items: center;
+            justify-content: center;
+        }
+        button:link,
+        button:visited {
+            text-transform: uppercase;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        button {
+            text-transform: uppercase;
+            background-color: #fff;
+            color: #777;
+            border-color: white;
+            border-radius: 100px;
+            padding: 0 25% 0 25%;
+            transition: all .25s;
+        }
+
         canvas {
             position: fixed;
             top: 0;
