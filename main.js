@@ -23,10 +23,9 @@ const shapeKeys = Object.keys(shapes);
 let customTexture = 'https://avatars.cloudflare.steamstatic.com/f38c10dea1a79250dc9559df1f4d4d0725bbb637_full.jpg'
 document.querySelector('label').addEventListener("click", () => {
   const url = document.querySelector('#imgUrl');
-  const submit = document.querySelector('label');
   if (url.value !== '') {
     customTexture = url.value;
-    changeCurrentShape(currentShape.geometry)
+    changeCurrentShape(currentShape.geometry, currentShape.name)
   }
 })
 
